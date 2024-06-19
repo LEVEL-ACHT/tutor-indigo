@@ -113,7 +113,8 @@ RUN npm install '@edx/frontend-component-footer@npm:@edly-io/indigo-frontend-com
         (
             "mfe-dockerfile-post-npm-install-authn",
             """
-RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^1.0.0'
+# RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^1.0.0'
+RUN npm install '@edx/brand@git+https://github.com/LEVEL-ACHT/brand-level-acht.git'
 """,
         ),
         # Tutor-Indigo v2.1 targets the styling updations in discussions and learner-dashboard MFE
