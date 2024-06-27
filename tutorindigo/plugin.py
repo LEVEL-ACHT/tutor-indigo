@@ -62,6 +62,7 @@ hooks.Filters.ENV_PATTERNS_INCLUDE.add_items(
 with open(
     os.path.join(
         str(importlib_resources.files("tutorindigo") / "templates"),
+        # this is the folder name
         "indigo-level-acht",
         "tasks",
         "init.sh",
@@ -114,6 +115,7 @@ RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^1.0.0'
             """
 RUN npm install '@edx/brand@git+https://github.com/LEVEL-ACHT/brand-openedx.git#brand-level-acht'
 """,
+            # this is our custom brand package for level8
         ),
         # Tutor-Indigo v2.1 targets the styling updates in discussions and learner-dashboard MFE
         # brand-openedx is related to styling updates while others are for header and footer updates

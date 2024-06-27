@@ -46,6 +46,7 @@ setup(
     python_requires=">=3.8",
     install_requires=["tutor>=18.0.0,<19.0.0", "tutor-mfe>=18.0.0,<19.0.0"],
     extras_require={"dev": "tutor[dev]>=18.0.0,<19.0.0"},
+    # In the line below, I had changed the name of plugin from indigo to indigo-level-acht to be sure that the right plugin was working.
     entry_points={"tutor.plugin.v1": ["indigo-level-acht = tutorindigo.plugin"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
