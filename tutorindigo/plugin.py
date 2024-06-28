@@ -129,8 +129,9 @@ RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^1.0.0'
         (
             "mfe-dockerfile-post-npm-install-learner-dashboard",
             """
-RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^1.0.0'
+RUN npm install '@edx/brand@git+https://github.com/LEVEL-ACHT/brand-openedx.git#demo-customer'
 """,
+            # this is our custom brand package for the customer
             # remove indigo-footer due to incompatible version deps of MFEs
         ),
         (
